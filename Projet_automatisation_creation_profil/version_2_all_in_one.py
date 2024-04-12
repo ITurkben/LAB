@@ -101,7 +101,7 @@ def main():
 
     #Création de l'utilisateur
     print("En cours de création du profil")
-    #creer_utilisateur_AD(conn, prenom, nom, trigramme, mot_de_passe_genere, service, adresse, code_postal, email)
+    creer_utilisateur_AD(conn, prenom, nom, trigramme, mot_de_passe_genere, service, adresse, code_postal, email)
     print(f"Trigramme: {trigramme}, Mot de passe: {mot_de_passe_genere}, Email: {email}, Fonction: {fonction}, Service: {service}, Gestionnaire: {gestionnaire}, Adresse: {adresse}, Code postal: {code_postal}")
 
 if __name__ == "__main__":

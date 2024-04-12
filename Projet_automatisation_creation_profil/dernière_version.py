@@ -41,8 +41,9 @@ def check_tri(conn, account_name):
 def creer_utilisateur_AD(conn, prenom, nom, trigramme, mot_de_passe, service, adresse, code_postal, email):
     try:
         print(f"Tentative de création de l'utilisateur {prenom} {nom} avec le trigramme {trigramme}")
-        user_dn = f"cn={prenom} {nom},ou={service},ou=Genay,ou=LEPINE,dc=groupe-lepine,dc=com"
+        #user_dn = f"cn={prenom} {nom},ou={service},ou=Genay,ou=LEPINE,dc=groupe-lepine,dc=com"
         #user_dn = f"cn={prenom} {nom},ou=Achats,ou=Genay,ou=LEPINE,dc=groupe-lepine,dc=com"
+        user_dn = f"CN={prenom} {nom},OU=Achats,OU=Genay,OU=LEPINE,DC=groupe-lepine,DC=com"
 
         
         attributes = {
